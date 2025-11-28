@@ -1,42 +1,94 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>LifeOS — Home</title>
-  <style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6;margin:2rem}a{color:#0366d6}</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LifeOS - Página Temporária</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: radial-gradient(circle at top, #d4e0ff, #0f172a);
+      color: #0f172a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 24px;
+      box-shadow: 0 20px 45px rgba(15, 23, 42, 0.2);
+      padding: 3rem;
+      max-width: 720px;
+      width: 100%;
+      text-align: center;
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 4vw, 3.5rem);
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin: 0 auto 1.5rem;
+      max-width: 50ch;
+      color: #1e293b;
+    }
+
+    .tagline {
+      text-transform: uppercase;
+      letter-spacing: 0.4rem;
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+      color: #475569;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.85rem 1.75rem;
+      border-radius: 999px;
+      border: 1px solid rgba(15, 23, 42, 0.15);
+      text-decoration: none;
+      color: #0f172a;
+      font-weight: 600;
+      background: linear-gradient(120deg, #f3f4f6, #dbeafe);
+      transition: transform 200ms ease, box-shadow 200ms ease;
+    }
+
+    .cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.15);
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>LifeOS (Notion + Drive)</h1>
-    <p>LifeOS integra organização tipo Notion com armazenamento no Google Drive — uma interface para organizar, buscar e abrir arquivos do seu Drive enquanto mantém os dados no seu dispositivo.</p>
-  </header>
-
-  <section>
-    <h2>Quem mantém</h2>
-    <p>Este projeto é mantido por <strong>Dalek2023</strong> — um projeto pessoal/experimental. Qualquer dúvida ou solicitação de remoção de dados, entre em contato pela página de <a href="/contact.html">Contato</a>.</p>
-  </section>
-
-  <section>
-    <h2>Como funciona</h2>
-    <ol>
-      <li>Você conecta sua conta Google Drive via OAuth.</li>
-      <li>O app lê metadados dos arquivos (nome, id, tipo, tamanho) e, quando solicitado, lê o conteúdo de arquivos específicos para exibição ou indexação.</li>
-      <li>Os dados acessados são armazenados localmente no seu dispositivo (veja a Política de Privacidade para detalhes).</li>
-    </ol>
-  </section>
-
-  <section>
-    <h2>Links rápidos</h2>
-    <ul>
-      <li><a href="/privacy-policy.html">Política de Privacidade</a></li>
-      <li><a href="/terms-of-service.html">Termos de Serviço</a></li>
-      <li><a href="/contact.html">Contato</a></li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>Versão inicial do site — mantenha o navegador e o sistema atualizados. Para contribuições, abra uma issue ou pull request no repositório.</p>
-  </footer>
+  <main class="card">
+    <p class="tagline">projeto em construção</p>
+    <h1>Atlas Pessoal com Ritmo Cósmico</h1>
+    <p>
+      Galáxias de ideias encontram listas de tarefa minimalistas nesta constelação improvável que mistura café frio,
+      playlists lo-fi e lembretes para respirar entre um mergulho profundo e outro. Nada disso faz sentido, mas tudo
+      parece incrivelmente organizado.
+    </p>
+    <p>
+      Enquanto algoritmos cochicham segredos sobre produtividade estelar, uma biblioteca randômica de textos inventa
+      narrativas sobre meteoros que atrasam reuniões e satélites que sincronizam rotina e desejos de férias. Totalmente
+      aleatório, estranhamente relaxante.
+    </p>
+    <a class="cta" href="mailto:contato@exemplo.com">Falar com o guardião</a>
+  </main>
 </body>
 </html>
